@@ -13,20 +13,27 @@ namespace Sconto
             double sconto;
             double scontato;
             double spesainpiu;
-            if (totale <= 300)
+            try
             {
-                sconto = totale / 100 * 10;
-                scontato = totale - sconto;
-                Console.WriteLine($"Lo sconto è di {sconto} euro e l'importo da pagare è {scontato} euro");
+                if (totale <= 300)
+                {
+                    sconto = totale / 100 * 10;
+                    scontato = totale - sconto;
+                    Console.WriteLine($"Lo sconto è di {sconto} euro e l'importo da pagare è {scontato} euro");
+                }
+                else if (totale > 300)
+                {
+                    scontoprima = 300 / 100 * 10;
+                    spesainpiu = totale - 300;
+                    scontodopo = spesainpiu / 100 * 20;
+                    sconto = scontoprima + scontodopo;
+                    scontato = totale - sconto;
+                    Console.WriteLine($"Lo sconto è di {sconto} euro e l'importo da pagare è {scontato} euro");
+                }
             }
-            else if (totale > 300)
+            catch (Exception ex)
             {
-                scontoprima = 300 / 100 * 10;
-                spesainpiu = totale - 300;
-                scontodopo = spesainpiu / 100 * 20;
-                sconto = scontoprima + scontodopo;
-                scontato = totale - sconto;
-                Console.WriteLine($"Lo sconto è di {sconto} euro e l'importo da pagare è {scontato} euro");
+                Console.WriteLine(ex.Message);
             }
             Console.ReadLine();
         }
