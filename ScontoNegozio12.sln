@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sconto", "ConsoleApp3\Sconto.csproj", "{1D9F5746-9091-4821-B6BD-1DA207D4DDE8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetodoSconto", "MetodoSconto\MetodoSconto.csproj", "{EB4EA132-B305-4BE7-8DC8-C4F24EE3E49D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1D9F5746-9091-4821-B6BD-1DA207D4DDE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D9F5746-9091-4821-B6BD-1DA207D4DDE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D9F5746-9091-4821-B6BD-1DA207D4DDE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB4EA132-B305-4BE7-8DC8-C4F24EE3E49D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB4EA132-B305-4BE7-8DC8-C4F24EE3E49D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB4EA132-B305-4BE7-8DC8-C4F24EE3E49D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB4EA132-B305-4BE7-8DC8-C4F24EE3E49D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
